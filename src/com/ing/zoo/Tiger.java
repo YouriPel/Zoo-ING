@@ -2,11 +2,7 @@ package com.ing.zoo;
 
 import java.util.Random;
 
-public class Tiger {
-    public String name;
-    public String helloText;
-    public String eatText;
-    public String trick;
+public class Tiger extends AcrobaticAnimal implements Carnivore {
 
     public Tiger()
     {
@@ -23,7 +19,7 @@ public class Tiger {
         eatText = "nomnomnom oink wubalubadubdub";
         System.out.println(eatText);
     }
-
+    @Override
     public void performTrick()
     {
         Random random = new Random();

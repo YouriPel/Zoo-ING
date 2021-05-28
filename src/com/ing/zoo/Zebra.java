@@ -1,12 +1,6 @@
 package com.ing.zoo;
 
-import java.util.Random;
-
-public class Zebra {
-    public String name;
-    public String helloText;
-    public String eatText;
-    public String trick;
+public class Zebra extends AcrobaticAnimal implements Herbivore {
 
     public Zebra()
     {
@@ -22,5 +16,10 @@ public class Zebra {
     {
         eatText = "munch munch zank yee bra";
         System.out.println(eatText);
+    }
+
+    @Override
+    public void performTrick() {
+
     }
 }
